@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/car_goods_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/car_goods_rb"
+        app:srcCompat="@drawable/sou_suo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <CheckBox
+        android:id="@+id/car_goods_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/car_goods_image"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/car_goods_image"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="3dp">
+
+        <TextView
+            android:id="@+id/car_goods_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextViewewewewe" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/car_goods_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="000"
+                android:textColor="#FF00"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/car_goods_jia"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#DDDDDD"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/car_goods_jian"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#DDDDDD"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_commodity_details"
+        android:id="@+id/cd_fl_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </include>
+
+    <RadioGroup
+        android:id="@+id/cd_rg_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cd_fl_content"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <RadioButton
+            android:text="店铺"
+            style="@style/bottom_tag_style"/>
+        <RadioButton
+            android:text="客服"
+            style="@style/bottom_tag_style" />
+        <RadioButton
+            android:text="收藏"
+            style="@style/bottom_tag_style" />
+        <RadioButton
+            android:text="加入购物车"
+            android:textSize="12dp"
+            android:textColor="#FFFFFF"
+            android:background="#FF8800"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:drawablePadding="3dp" />
+        <RadioButton
+            android:text="立刻购买"
+            android:textSize="12dp"
+            android:textColor="#FFFFFF"
+            android:background="#FF0000"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:drawablePadding="3dp" />
+    </RadioGroup>
+
+</LinearLayout>
